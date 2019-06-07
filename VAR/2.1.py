@@ -13,9 +13,9 @@ class generator:
     def __iter__(self):
         return self
 
-f = generator() 
+p = generator() 
 
 st = int(input("От какого числа: \t" ))
 end = int(input("До какого числа: \t" ))
 
-print(list(islice(f, st, end))) 
+print(list(islice(p, st, end))) 
