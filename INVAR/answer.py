@@ -2,7 +2,7 @@
 
 n = int(input('Введите максимальное число: '))
 
-if value < 2:
+if n < 2:
     quit()
 
 print(number1, end=' ')
@@ -60,3 +60,8 @@ def fib(value):
 
 res = fib(value)
 print(res)
+
+if __name__ == "__main__":
+    assert(fib(3) == [0,1,1,2,3])
+    assert(fib(5) == [0,1,1,2,3,5])
+    assert(fib(8) == [0,1,1,2,3,5,8])
