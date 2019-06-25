@@ -1,17 +1,22 @@
 # Задание 2.1
 
-value = int(input('Введите максимальное число: '))
-number1 = 1
-number2 = 1
+n = int(input('Введите максимальное число: '))
 
 if value < 2:
     quit()
 
 print(number1, end=' ')
 print(number2, end=' ')
-for i in range(2, value):
-    number1, number2 = number2, number1 + number2
-    print(number2, end=' ')
+
+def func(value):
+    number1 = 0
+    number2 = 1
+    while number2<value:
+        number1, number2 = number2, number1 + number2
+        print(number2, end=' ')
+    
+res = []
+res = func(n)
     
 # Задание 2.2
 
